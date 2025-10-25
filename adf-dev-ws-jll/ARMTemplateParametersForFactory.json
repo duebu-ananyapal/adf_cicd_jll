@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-dev-ws-jll"
+		},
+		"ls_adls_jllstorageadlsmedallion_medallion_storage_accountKey": {
+			"value": ""
+		},
+		"ls_blob_jllstoragebloblanding_storage_connectionString": {
+			"value": ""
+		},
+		"ls_source_sqldb_jll_password": {
+			"value": ""
+		},
+		"ls_adls_jllstorageadlsmedallion_medallion_storage_properties_typeProperties_url": {
+			"value": "https://jllstorageadlsmedallion.dfs.core.windows.net/"
+		},
+		"ls_restAPI_pokemon_properties_typeProperties_url": {
+			"value": "https://pokeapi.co/api/v2/pokemon/"
+		},
+		"ls_source_sqldb_jll_properties_typeProperties_server": {
+			"value": "jllserver.database.windows.net"
+		},
+		"ls_source_sqldb_jll_properties_typeProperties_database": {
+			"value": "jll"
+		},
+		"ls_source_sqldb_jll_properties_typeProperties_userName": {
+			"value": "adminspal16"
+		}
+	}
+}
