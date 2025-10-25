@@ -1,0 +1,23 @@
+{
+	"name": "ds_lookup_emptyjson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_jllstoragebloblanding_storage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "adfpro_ansh/lookup"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "empty.json",
+				"container": "lookup-jsons"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

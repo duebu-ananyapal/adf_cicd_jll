@@ -1,0 +1,12 @@
+{
+	"name": "ls_blob_jllstoragebloblanding_storage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=jllstoragebloblanding;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk2RkRDNkZDLTdFREItNERDMS04QjFFLUE4QTZCOUI4MjY2Nl9jMmE1YTAxMy1lMDJlLTQyOWQtYjY2My1kNjM1MjRiZmEyOTUiDQp9"
+		}
+	}
+}

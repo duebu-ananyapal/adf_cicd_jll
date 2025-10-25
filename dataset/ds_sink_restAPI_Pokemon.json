@@ -1,0 +1,24 @@
+{
+	"name": "ds_sink_restAPI_Pokemon",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_jllstoragebloblanding_storage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "adfpro_ansh/sink"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "pokemon.json",
+				"folderPath": "pokemon",
+				"container": "sink"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "adf-dev-ws-jll",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "13b8d0d5-4b6f-4563-9564-14429d762b76",
+		"tenantId": "967556b9-9ee7-4654-9ee8-2617d2fda71e"
+	}
+}

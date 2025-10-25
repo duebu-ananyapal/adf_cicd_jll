@@ -1,0 +1,23 @@
+{
+	"name": "ds_lookup_cdctimestamp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_jllstoragebloblanding_storage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "adfpro_ansh/lookup"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "cdc.json",
+				"container": "lookup-jsons"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

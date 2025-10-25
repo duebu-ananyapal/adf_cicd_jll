@@ -1,0 +1,45 @@
+{
+	"name": "ds_adls_sourcefiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_jllstorageadlsmedallion_medallion_storage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_sink_container": {
+				"type": "string"
+			},
+			"p_sink_folder": {
+				"type": "string"
+			},
+			"p_sink_file": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "adfpro_ansh/sink"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().p_sink_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().p_sink_folder",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().p_sink_container",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "ds_pokemon_list",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_restAPI_pokemon",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "adfpro_ansh/source"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": ""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

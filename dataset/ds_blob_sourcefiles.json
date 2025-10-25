@@ -1,0 +1,34 @@
+{
+	"name": "ds_blob_sourcefiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_jllstoragebloblanding_storage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_container": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "adfpro_ansh/source"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": {
+					"value": "@dataset().p_container",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

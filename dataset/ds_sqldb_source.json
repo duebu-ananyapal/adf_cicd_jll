@@ -1,0 +1,16 @@
+{
+	"name": "ds_sqldb_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_source_sqldb_jll",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "adfpro_ansh/source"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
